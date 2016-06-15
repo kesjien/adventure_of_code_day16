@@ -27,3 +27,4 @@ const result = parsedList.filter(sue => {
                 }
              })
 })
+console.log(result)
