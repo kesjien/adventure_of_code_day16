@@ -2,6 +2,7 @@
 Adventure of code day 16  Aunt Sue challenge http://adventofcode.com/day/16
 
 #source
+
 let auntList = document.body.innerText.trim(),parsedList = [];
 auntList.split('\n').map((line,i) => {
     let match = /^Sue (\d+): (\w+): (\d+), (\w+): (\d+), (\w+): (\d+)$/.exec(line);
