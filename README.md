@@ -2,7 +2,7 @@
 Adventure of code day 16  Aunt Sue challenge http://adventofcode.com/day/16
 
 #Source
-
+```javascript
 let auntList = document.body.innerText.trim(),parsedList = [];
 auntList.split('\n').map((line,i) => {
     let match = /^Sue (\d+): (\w+): (\d+), (\w+): (\d+), (\w+): (\d+)$/.exec(line);
@@ -28,3 +28,4 @@ const result = parsedList.filter(sue => {
              })
 })
 console.log(result)
+```
