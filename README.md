@@ -16,16 +16,16 @@ auntList.split('\n').map((line,i) => {
 const filters = {children: 3,cats: 7,samoyeds: 2,pomeranians: 3,akitas: 0,vizslas: 0,goldfish: 5,trees: 3,cars: 2,perfumes: 1};
 const result = parsedList.filter(sue => {
   return Object.keys(sue)
-             .filter(name => name !== 'number')
-             .every(set => {
-                if (set === 'cats' || set === 'trees') {
-                    return sue[set] >= filters[set];
-                } else if (set === 'pomeranians' || set === 'goldfish') {
-                    return sue[set] <= filters[set];
-                } else {
-                    return sue[set] === filters[set];
-                }
-             })
+     .filter(name => name !== 'number')
+        .every(set => {
+            if (set === 'cats' || set === 'trees') {
+                return sue[set] >= filters[set];
+            } else if (set === 'pomeranians' || set === 'goldfish') {
+                return sue[set] <= filters[set];
+            } else {
+                return sue[set] === filters[set];
+            }
+        })
 })
 console.log(result)
 ```
